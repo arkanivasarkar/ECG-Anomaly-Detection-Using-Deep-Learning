@@ -1,6 +1,4 @@
-function pout = spectfeatures(ecg,count)
-
-fs = 250;
+function pout = spectfeatures(ecg,count,fs)
 
 ifq = instfreq(ecg,fs);
 ifq = (ifq)';
@@ -18,7 +16,6 @@ switch count
     case 2
         pout = se;
 end
-
 end
 
 

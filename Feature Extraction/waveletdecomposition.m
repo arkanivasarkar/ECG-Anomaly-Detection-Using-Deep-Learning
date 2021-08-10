@@ -1,30 +1,24 @@
 function OP = waveletdecomposition(signal,count)
 
-#Defining wavelet's name and level of decomposition
+%Defining wavelet's name and level of decomposition
 waveletName='db4';
 level=5;
 
 % Multilevel 1-D wavelet decomposition
 [c,l]=wavedec(signal,level,waveletName);
 
+%wavelet coefficients
+D1 = wrcoef('d',c,l,waveletName,1);
+D2 = wrcoef('d',c,l,waveletName,2);
+D3 = wrcoef('d',c,l,waveletName,3);
+D4 = wrcoef('d',c,l,waveletName,4);
+D5 = wrcoef('d',c,l,waveletName,5);
+A5 = wrcoef('a',c,l,waveletName,5);
+
 k=1;
 n=45;
 m=200;
 
-
-D1 = wrcoef('d',c,l,waveletName,1);
-% for i=1:m
-%     D11(i)=mean(D1(k:k+n-1));
-%     k=k+n;
-% end
-D2 = wrcoef('d',c,l,waveletName,2);
-D3 = wrcoef('d',c,l,waveletName,3);
-
-D4 = wrcoef('d',c,l,waveletName,4);
-
-D5 = wrcoef('d',c,l,waveletName,5);
-
-A5 = wrcoef('a',c,l,waveletName,5);
 for i=1:m
     D11(i)=mean(D1(k:k+n-1));
     D21(i)=mean(D2(k:k+n-1));
@@ -48,8 +42,7 @@ switch count
         OP = D51;
     case 6
         OP = A51;
-end
-    
+end    
 end
 
 

@@ -1,4 +1,4 @@
-# ECG-Anomaly-Detection-Using-Deep-Learning
+# ECG Anomaly Detection Using Deep Learning
 
 This repository contains the implementation of recurrent neural network based deep learning architectures for detecting anomalies in ECG waveform and classifying normal and diseased condition.
 

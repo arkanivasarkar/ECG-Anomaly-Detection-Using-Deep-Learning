@@ -14,3 +14,5 @@ This repository contains the implementation of recurrent neural network based de
 
 
 [![Capture.jpg](https://i.postimg.cc/434ZY8Xt/Capture.jpg)](https://postimg.cc/YvPTVzGq)
+
+![ecg](https://user-images.githubusercontent.com/73361480/131980725-589d3226-626c-41aa-b1f8-ce53117c56ed.gif)

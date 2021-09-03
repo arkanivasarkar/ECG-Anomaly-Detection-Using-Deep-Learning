@@ -15,6 +15,8 @@ Finally, a graphical user interface (GUI) was designed to facilitate visualizati
 ## Dataset
 
 We used [PhysioNet Challenge 2017](https://physionet.org/content/challenge-2017/1.0.0/) dataset which consists of 8528 short single lead signals of 30-60 seconds length, sampled at 300 Hz to train our model, which classifies ECG signals into normal sinus rhythm (N), atrial fibrillation (A) and other rhythms (O).
+&nbsp;
+&nbsp;
 
 [![Signal-Types.jpg](https://i.postimg.cc/C5CSZ9nG/Signal-Types.jpg)](https://postimg.cc/YLSJZn30)
 

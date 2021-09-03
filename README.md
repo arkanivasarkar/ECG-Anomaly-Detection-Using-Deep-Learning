@@ -4,7 +4,7 @@
 
 This repository contains the implementation of recurrent neural network based deep learning architectures for detecting anomalies in ECG waveform and classifying normal and diseased condition.
 
-![Picture1.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/1200px-SinusRhythmLabels.svg.png)
+[![Capture3.jpg](https://i.postimg.cc/ydszMvbW/Capture3.jpg)](https://postimg.cc/67jSRLwN)
 
 
 [![Signal-Types.jpg](https://i.postimg.cc/C5CSZ9nG/Signal-Types.jpg)](https://postimg.cc/YLSJZn30)

@@ -1,4 +1,4 @@
-function lstm_model(XTrain,YTrain,epochs,MiniBatchSize)
+function lstm_model(XTrain,YTrain,XTest,YTest,epochs,MiniBatchSize)
 
 layers = [ ...
     sequenceInputLayer(3)

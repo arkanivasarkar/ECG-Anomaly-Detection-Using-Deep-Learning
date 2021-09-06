@@ -1,9 +1,9 @@
 function feat = spectfeatures(ecg,count,fs)
 
-ifq = instfreq(ecg,fs); #instantenous freq
+ifq = instfreq(ecg,fs); %instantenous freq
 ifq = (ifq)';
 
-se = pentropy(ecg,fs); #spect entropy
+se = pentropy(ecg,fs); %spect entropy
 se = (se)';
 
 switch count

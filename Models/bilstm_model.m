@@ -1,4 +1,4 @@
-function bilstm_model(XTrain,YTrain,epochs,MiniBatchSize)
+function bilstm_model(XTrain,YTrain,XTest,YTest,epochs,MiniBatchSize)
 layers = [ ...
     sequenceInputLayer(2)
     bilstmLayer(120,'OutputMode','last')

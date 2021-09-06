@@ -1,10 +1,11 @@
+% 6-level decomposition using db4 wavelet
 function OP = waveletdecomposition(signal,count)
 
-%Defining wavelet's name and level of decomposition
+% Defining wavelet's name and level of decomposition
 waveletName='db4';
 level=5;
 
-% Multilevel 1-D wavelet decomposition
+% 1-D wavelet decomposition
 [c,l]=wavedec(signal,level,waveletName);
 
 %wavelet coefficients
@@ -15,33 +16,21 @@ D4 = wrcoef('d',c,l,waveletName,4);
 D5 = wrcoef('d',c,l,waveletName,5);
 A5 = wrcoef('a',c,l,waveletName,5);
 
-k=1;
-n=45;
-m=200;
 
-for i=1:m
-    D11(i)=mean(D1(k:k+n-1));
-    D21(i)=mean(D2(k:k+n-1));
-    D31(i)=mean(D3(k:k+n-1));
-    D41(i)=mean(D4(k:k+n-1));
-    D51(i)=mean(D5(k:k+n-1));
-    A51(i)=mean(A5(k:k+n-1));
-    k=k+n;
-end
 
 switch count
     case 1
-        OP = D11;
+        OP = D1;
     case 2
-        OP = D21;
+        OP = D2;
     case 3
-        OP = D31;
+        OP = D3;
     case 4
-        OP = D41;
+        OP = D4;
     case 5
-        OP = D51;
+        OP = D5;
     case 6
-        OP = A51;
+        OP = A5;
 end    
 end
 

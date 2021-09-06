@@ -1,4 +1,4 @@
-function nbclassifier(XTrain, YTrain)
+function nbclassifier(XTrain,YTrain,XTest,YTest)
 clf = fitcnb(XTrain, YTrain);
 pred = clf.predict;
 

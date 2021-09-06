@@ -68,15 +68,13 @@ The GUI
 ## Results
 
 Out of the three architectures, GRU gave the best classification accuracy. 
-
 Merging of the models with high performance to make an ensemble neural network helped to improve the accuracy even more.
-
 The model was incorporated into the GUI, and it was able to analyse the signals in >1 s, which shows that it can be used for real-time analysis.
 
 
 <img align="center" alt="gui" width="800px" src="https://thumbs.gfycat.com/KnobbyAlienatedCottontail-max-1mb.gif" />
 
-
+</br>
 
 ## References
 
